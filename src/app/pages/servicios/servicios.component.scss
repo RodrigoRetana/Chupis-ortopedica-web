@@ -1,0 +1,36 @@
+.page-hero {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+  h1 { font-size: 2.5rem; font-weight: 800; }
+  p { opacity: 0.85; margin-top: 12px; font-size: 1.1rem; }
+}
+.servicios-content { padding: 80px 0; }
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 600px) { grid-template-columns: 1fr; }
+}
+.servicio-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+  &:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,95,163,0.12); }
+  &__icon {
+    width: 64px; height: 64px;
+    background: var(--bg-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    svg { width: 28px; height: 28px; color: var(--primary); }
+  }
+  h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--text-dark); }
+  p { color: var(--text-gray); font-size: 0.92rem; line-height: 1.65; }
+}

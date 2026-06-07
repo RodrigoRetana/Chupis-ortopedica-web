@@ -1,0 +1,17 @@
+<section class="page-hero">
+  <div class="container">
+    <h1>Nuestros Servicios</h1>
+    <p>Fabricación y venta de productos ortopédicos a la medida</p>
+  </div>
+</section>
+<section class="servicios-content">
+  <div class="container">
+    <div class="servicios-grid">
+      <div class="servicio-card" *ngFor="let s of servicios">
+        <div class="servicio-card__icon" [innerHTML]="s.icon"></div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
