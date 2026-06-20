@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Deploy to GitHub Pages
+
+This project is configured to deploy using `angular-cli-ghpages`.
+
+1. Make sure your default branch is pushed to GitHub.
+2. Run `npm run deploy`.
+3. In GitHub, go to repository Settings > Pages.
+4. In Build and deployment, select Deploy from a branch.
+5. Select branch `gh-pages` and folder `/ (root)` and save.
+
+Published URL for this repository:
+
+`https://rodrigoretana.github.io/Chupis-ortopedica-web/`
