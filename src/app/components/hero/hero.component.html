@@ -1,5 +1,9 @@
 <section class="hero">
-  <div class="hero__bg"></div>
+  <div class="hero__media" aria-hidden="true">
+    <img class="hero__image hero__image--current" [class.is-visible]="!transitioning" [src]="currentImage.src" [alt]="currentImage.alt">
+    <img class="hero__image hero__image--next" [class.is-visible]="transitioning" [src]="nextImage.src" [alt]="nextImage.alt" (transitionend)="onIncomingImageTransitionEnd($event)">
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
   <div class="container hero__content">
     <span class="hero__tag">Desde 1989</span>
     <h1 class="hero__title">Líderes en la fabricación y venta de <span>productos ortopédicos</span></h1>

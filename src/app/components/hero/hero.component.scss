@@ -1,19 +1,42 @@
 .hero {
   position: relative;
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+  background: #0b2f4b;
   color: var(--white);
-  padding: 100px 0 80px;
+  padding: 0;
   overflow: hidden;
-  min-height: 520px;
+  min-height: 560px;
   display: flex;
   align-items: center;
 
-  &__bg {
+  &__media {
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(circle at 75% 30%, rgba(255,255,255,0.08) 0%, transparent 50%),
-      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(7, 32, 54, 0.82) 0%, rgba(7, 32, 54, 0.55) 45%, rgba(7, 32, 54, 0.18) 100%);
     pointer-events: none;
   }
 
@@ -22,6 +45,7 @@
     z-index: 2;
     max-width: 700px;
     animation: fadeInUp 0.7s ease;
+    padding: 100px 0 80px;
   }
 
   &__tag {
@@ -75,6 +99,8 @@
     left: 0;
     right: 0;
     line-height: 0;
+    z-index: 3;
+
     svg { width: 100%; height: 60px; display: block; }
   }
 }
