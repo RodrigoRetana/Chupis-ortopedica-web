@@ -1,25 +1,95 @@
 .page-hero {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-  color: #fff; padding: 80px 0 60px; text-align: center;
-  h1 { font-size: 2.5rem; font-weight: 800; }
-  p { opacity: 0.85; margin-top: 12px; font-size: 1.1rem; }
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  p {
+    opacity: 0.85;
+    margin-top: 12px;
+    font-size: 1.1rem;
+  }
 }
-.acerca-content { padding: 80px 0; }
+
+.acerca-content {
+  padding: 80px 0;
+}
+
 .acerca-inner {
-  display: grid; grid-template-columns: 1fr 400px; gap: 64px; align-items: start;
-  @media (max-width: 900px) { grid-template-columns: 1fr; }
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 64px;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 }
+
 .acerca-text {
-  h2 { font-size: 2rem; margin: 10px 0 20px; span { color: var(--primary); } }
-  p { color: var(--text-gray); margin-bottom: 16px; line-height: 1.7; }
+  h2 {
+    font-size: 2rem;
+    margin: 10px 0 20px;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  p {
+    color: var(--text-gray);
+    margin-bottom: 16px;
+    line-height: 1.7;
+  }
 }
+
 .acerca-sucursales {
-  background: var(--bg-light); border-radius: 12px; padding: 24px; margin-top: 24px;
-  h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 14px; color: var(--primary); }
-  ul li { margin-bottom: 10px; a { color: var(--text-gray); font-size: 0.92rem; &:hover { color: var(--primary); } } }
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--primary);
+  }
+
+  ul li {
+    margin-bottom: 10px;
+
+    a {
+      color: var(--text-gray);
+      font-size: 0.92rem;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
 }
-.acerca-img img { width: 100%; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,95,163,0.15); }
+
+.acerca-img img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 95, 163, 0.15);
+}
+
 .section-label {
-  display: inline-block; color: var(--primary); font-family: 'Montserrat', sans-serif; font-weight: 700;
-  font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 8px;
+  display: inline-block;
+  color: var(--primary);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+  margin-bottom: 8px;
 }
