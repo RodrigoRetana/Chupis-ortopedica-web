@@ -2,7 +2,8 @@ name: Deploy Angular to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -24,21 +25,19 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build Angular
-        run: npm run build -- --configuration production --base-href "/Chupis-ortopedica-web/"
+      - name: Build
+        run: npm run build -- --configuration production
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Ajusta esta ruta si tu build sale en otra carpeta
           path: dist
 
   deploy:
