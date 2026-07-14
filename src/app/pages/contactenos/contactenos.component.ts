@@ -28,13 +28,13 @@ export class ContactenosComponent {
       nombre: 'Calderón Guardia',
       telefono: '2223-7414',
       whatsapp: '62497-452',
-      direccion: 'De la Torre de Emergencias 125 metros Norte, San José,, Costa Rica'
+      direccion: 'De la Torre de Emergencias 125 metros Norte, San José, Costa Rica'
     },
     {
       nombre: 'CENARE',
       telefono: '2231-4096',
       whatsapp: '62497-452',
-      direccion: '25 metros al Sur , entrada principal CENARE. La Uruca, San Jose, San José, Costa Rica'
+      direccion: '25 metros al Sur, entrada principal CENARE. La Uruca, San Jose, San José, Costa Rica'
     },
     {
       nombre: 'Liberia',

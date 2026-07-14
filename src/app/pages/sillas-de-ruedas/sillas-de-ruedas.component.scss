@@ -15,6 +15,24 @@
     font-size: 1.1rem;
   }
 }
+.page-hero-second {
+  background: linear-gradient(white, white);
+  color: #005fa3;
+  padding: 80px 0 60px;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  p {
+    opacity: 0.85;
+    margin-top: 12px;
+    font-size: 1.1rem;
+  }
+}
+
 
 .soluciones-content {
   padding: 104px 0;
@@ -242,4 +260,68 @@
   letter-spacing: 0.1rem;
   margin-bottom: 8px;
   padding-left: 10px;
+}
+
+
+.page-hero {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+  h1 { font-size: 2.5rem; font-weight: 800; }
+  p { opacity: 0.85; margin-top: 12px; font-size: 1.1rem; }
+}
+.carac-content, .modelos-content { padding: 80px 0; }
+.carac-grid, .modelos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 600px) { grid-template-columns: 1fr; }
+}
+.carac-card, .modelos-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+  &:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,95,163,0.12); }
+  &__icon {
+    width: 64px; height: 64px;
+    background: var(--bg-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    svg { width: 28px; height: 28px; color: var(--primary); }
+  }
+  h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--text-dark); }
+  p { color: var(--text-gray); font-size: 0.92rem; line-height: 1.65; }
+}
+
+.modelos-card {
+  overflow: hidden;
+  padding: 10px 0 0;
+
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+  }
+
+  h3,
+  p {
+    padding: 0 28px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p {
+    margin-bottom: 0;
+    padding-bottom: 28px;
+  }
 }

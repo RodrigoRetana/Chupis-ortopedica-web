@@ -17,10 +17,23 @@
   </div>
 </section>
 
+<section class="carac-content">
+  <div class="container">
+    <div class="carac-grid">
+      <div class="carac-card" *ngFor="let s of carac">
+        <div class="carac-card__icon" [innerHTML]="s.icon"></div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="modelos-content">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">Modelos destacados</span>
+      <span class="section-label">Modelos</span>
       <h2>Opciones pensadas para distintas necesidades</h2>
       <p>Elegimos referencias que combinan resistencia, ergonomía y facilidad de uso para el día a día.</p>
     </div>
@@ -41,6 +54,7 @@
           <span class="section-label">{{ activeModel.title }}</span>
           <h3>{{ activeModel.title }}</h3>
           <p>{{ activeModel.description }}</p>
+
         </div>
       </article>
 
@@ -63,6 +77,20 @@
     </div>
   </div>
 </section>
+
+<section class="modelos-content">
+  <div class="container">
+    <div class="modelos-grid">
+      <div class="modelos-card" *ngFor="let s of modelos">
+        <img class="card-img" [src]="s.src" [alt]="s.title">
+        <h3>{{ s.desc }}</h3>
+        <p>{{ s.title }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="soluciones-content soluciones-content--cta">
   <div class="container soluciones-cta">
