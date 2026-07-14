@@ -27,18 +27,21 @@ jobs:
         with:
           node-version: 24
           cache: npm
+          cache-dependency-path: Chupis-ortopedica-web/package-lock.json
 
       - name: Install dependencies
         run: npm ci
+        working-directory: Chupis-ortopedica-web
 
       - name: Build
         run: npm run build -- --configuration production
+        working-directory: Chupis-ortopedica-web
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Ajusta esta ruta si tu build sale en otra carpeta
-          path: dist
+          # Si tu build genera otra ruta, cámbiala aquí
+          path: Chupis-ortopedica-web/dist
 
   deploy:
     environment:
