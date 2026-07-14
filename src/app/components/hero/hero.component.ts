@@ -19,15 +19,15 @@ const TRANSITION_DURATION_MS = 800;
 export class HeroComponent implements OnInit, OnDestroy {
   readonly images: HeroImage[] = [
     {
-      src: 'Chupis-Ortopedica.jpeg',
+      src: '/Chupis-ortopedica-web/Chupis-Ortopedica.jpeg',
       alt: 'Imagen de portada de Chupis Ortopédica'
     },
     {
-      src: 'Chupis-Ortopedica-2.jpeg',
+      src: '/Chupis-ortopedica-web/Chupis-Ortopedica-2.jpeg',
       alt: 'Imagen de portada de Chupis Ortopédica'
     },
     {
-      src: 'Chupis-Ortopedica2-1.jpeg',
+      src: '/Chupis-ortopedica-web/Chupis-Ortopedica2-1.jpeg',
       alt: 'Imagen de portada de Chupis Ortopédica'
     }
   ];
