@@ -23,19 +23,19 @@ const CAROUSEL_INTERVAL_MS = 5000;
 export class SillasDeRuedasComponent implements OnInit, OnDestroy {
   readonly models: WheelchairModel[] = [
     {
-      src: '/imgCarru1.png',
+      src: 'imgCarru1.png',
       alt: 'Silla de ruedas compacta',
       title: 'Compacta y práctica',
       description: 'Ideal para traslados frecuentes y espacios reducidos.'
     },
     {
-      src: '/imgCarru2.jpg',
+      src: 'imgCarru2.jpg',
       alt: 'Silla de ruedas de uso diario',
       title: 'Uso diario',
       description: 'Confort y soporte para acompañar rutinas prolongadas.'
     },
     {
-      src: '/imgCarru3.jpg',
+      src: 'imgCarru3.jpg',
       alt: 'Silla de ruedas con acompañamiento',
       title: 'Mayor soporte',
       description: 'Diseñada para brindar estabilidad y mejor postura.'
@@ -68,65 +68,65 @@ export class SillasDeRuedasComponent implements OnInit, OnDestroy {
     {
       title: 'Pediátrica',
       desc: 'Rogue XP',
-      src: "/RogueXP.png"
+      src: "RogueXP.png"
     },
     {
       title: 'Pediátrica',
       desc: 'Little Wave arc',
-      src: "/WaveArc.png"
+      src: "WaveArc.png"
     },
     {
       title: 'Pediátrica',
       desc: 'Little Wave Click',
-      src: "/WaveClick.png"
+      src: "WaveClick.png"
     },
     {
       title: 'Pediátrica',
       desc: 'Little Wave Flip',
-      src: "/WaveFlip.png"
+      src: "WaveFlip.png"
     },
     {
       title: 'Pediátrica',
       desc: 'Spark',
-      src: "/Spark.png"
+      src: "Spark.png"
     },
     {
       title: 'Basculación',
       desc: 'Focus CR',
-      src: "/FocusCR.png"
+      src: "FocusCR.png"
     },
     {
       title: 'Basculación',
       desc: 'Liberty',
-      src: "/Liberty.png"
+      src: "Liberty.png"
     },
     {
       title: 'Rígido',
       desc: 'Rogue²',
-      src: "/Rogue2.png"
+      src: "Rogue2.png"
     },
     {
       title: 'Rígido',
       desc: 'Rogue ALX',
-      src: "/RogueALX.png"
+      src: "RogueALX.png"
     }
     ,
     {
       title: 'Plegable',
       desc: 'La Diferencia Catalyst',
-      src: "/CatalystDifference.jpg"
+      src: "CatalystDifference.jpg"
     }
     ,
     {
       title: 'Plegable',
       desc: 'Catalyst 5',
-      src: "/Catalyst5.png"
+      src: "Catalyst5.png"
     },
     {
     
       title: 'Plegable',
       desc: 'Catalyst 5Vx',
-      src: "/Catalyst5Vx.png"
+      src: "Catalyst5Vx.png"
     
     }
   ];
